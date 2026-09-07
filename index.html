@@ -294,7 +294,7 @@
         </div>
 
         <div id="page3" class="page">
-            <h1>For You, Babe 💝</h1>            <div class="letter-box">Heyy babe 😉 I hope this day will be memorable for you 😌🤩, I wish you always be happy in your life and that beautiful smile of yours keeps making my heart fall for you 🫠🫠. Babe your little habits, your voice, your cuteness 😍🫣 uff soo irresistible 😮‍💨🫠, I might sometimes annoy you (I will though 😁😘) but babe seriously you're the best person I have met , the one who listen to me whatever I say and never judge , the person whom I freely talk to without thinking twice, you're the one I feel most loved with 😌👉👈, I wish you always be like this and I wish you never get annoyed of me (my biggest fear fr), I wish I can always be with you in your goods and bads. Babe you plz always be what you are because you are the most beautiful person I have ever seen, you're the most perfect and best person I have met , you deserve all the happiness in this world for eg: me😌😏, I pray you get all the things you want in life , may all the bad things be shuu from your life 🤩. 
+            <h1>For You, Babe 💝</h1>              <div class="letter-box">Heyy babe 😉 I hope this day will be memorable for you 😌🤩, I wish you always be happy in your life and that beautiful smile of yours keeps making my heart fall for you 🫠🫠. Babe your little habits, your voice, your cuteness 😍🫣 uff soo irresistible 😮‍💨🫠, I might sometimes annoy you (I will though 😁😘) but babe seriously you're the best person I have met , the one who listen to me whatever I say and never judge , the person whom I freely talk to without thinking twice, you're the one I feel most loved with 😌👉👈, I wish you always be like this and I wish you never get annoyed of me (my biggest fear fr), I wish I can always be with you in your goods and bads. Babe you plz always be what you are because you are the most beautiful person I have ever seen, you're the most perfect and best person I have met , you deserve all the happiness in this world for eg: me😌😏, I pray you get all the things you want in life , may all the bad things be shuu from your life 🤩. 
 
 I'm just super duper lucky to have a sweet charming gurl like you in my life who idk why hates me (pretends to 😒)but anyways I think also cares for me which means she indirectly loves me 😌🫣. 
 
@@ -307,8 +307,43 @@ I wish to Lord give you some kisses and huggies from me(me only 😼) 😌😘
 Babe! HAPPY BIRTHDAY 🥳😘
 I love you 💝😚</div>
 
+            <button class="btn" onclick="navigateToPage(4)">One Last Thing... ➔</button>
+            <button class="btn btn-secondary" onclick="navigateToPage(2)">Back</button>
+        </div>
+
+        <!-- PAGE 4: Dedicated Animated Kissing Sticker Page -->
+        <div id="page4" class="page">
+            <h1>Sending You Kisses! 💋</h1>
+            <p style="margin-bottom: 20px; font-weight: 500; color: var(--dark-pink);">Here is a little birthday hug and kiss from me to you! 🥰</p>
+            
+            <div style="display: flex; justify-content: center; align-items: center; margin: 30px 0; min-height: 100px; position: relative;">
+                <svg width="150" height="100" viewBox="0 0 120 80" style="overflow: visible;">
+                    <style>
+                        @keyframes leftFace { 0%, 100% { transform: translateX(0); } 40%, 70% { transform: translateX(12px); } }
+                        @keyframes rightFace { 0%, 100% { transform: translateX(0); } 40%, 70% { transform: translateX(-12px); } }
+                        @keyframes loveHeart { 0%, 35%, 75%, 100% { transform: scale(0); opacity: 0; } 45%, 65% { transform: scale(1.3); opacity: 1; } }
+                        .left-g { animation: leftFace 3s infinite ease-in-out; }
+                        .right-g { animation: rightFace 3s infinite ease-in-out; }
+                        .heart-p { animation: loveHeart 3s infinite ease-in-out; transform-origin: 60px 25px; }
+                    </style>
+                    <g class="left-g">
+                        <circle cx="35" cy="45" r="22" fill="#FFF0F5" stroke="#FF6699" stroke-width="3"/>
+                        <circle cx="45" cy="42" r="2.5" fill="#4A4A4A"/>
+                        <ellipse cx="32" cy="46" rx="4" ry="2" fill="#FFB7C5"/>
+                        <path d="M42,48 Q45,51 43,53" stroke="#FF6699" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </g>
+                    <g class="right-g">
+                        <circle cx="85" cy="45" r="22" fill="#FFF0F5" stroke="#FF6699" stroke-width="3"/>
+                        <circle cx="75" cy="42" r="2.5" fill="#4A4A4A"/>
+                        <ellipse cx="88" cy="46" rx="4" ry="2" fill="#FFB7C5"/>
+                        <path d="M78,48 Q75,51 77,53" stroke="#FF6699" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    </g>
+                    <path class="heart-p" d="M60,30 C58,25 52,25 52,31 C52,36 60,42 60,42 C60,42 68,36 68,31 C68,25 62,25 60,30 Z" fill="#FF6699"/>
+                </svg>
+            </div>
+
             <button class="btn" onclick="makeConfetti()">Tap for Infinite Sparkles! 🌟</button>
-            <button class="btn btn-secondary" onclick="navigateToPage(2)">Back to Start</button>
+            <button class="btn btn-secondary" onclick="navigateToPage(1)">Back to Start</button>
         </div>
     </div>
 
@@ -350,7 +385,7 @@ I love you 💝😚</div>
             });
             document.getElementById('page' + pageNum).classList.add('active');
             
-            if(pageNum === 3) {
+            if(pageNum === 3 || pageNum === 4) {
                 makeConfetti();
             }
         }
@@ -376,3 +411,4 @@ I love you 💝😚</div>
     </script>
 </body>
 </html>
+           
